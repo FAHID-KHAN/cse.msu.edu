@@ -12,7 +12,6 @@ REFERENCE_OCTAVE = 4
 REFERENCE_PITCH = 9
 REFERENCE_FREQ = 440
 
-# Get input for three notes
 octave1 = int(input("Enter octave number for note 1: "))
 pitch1 = int(input("Enter pitch class for note 1: "))
 
@@ -22,7 +21,7 @@ pitch2 = int(input("Enter pitch class for note 2: "))
 octave3 = int(input("Enter octave number for note 3: "))
 pitch3 = int(input("Enter pitch class for note 3: "))
 
-# Calculate frequencies
+
 def calculate_frequency(octave, pitch):
     return REFERENCE_FREQ * pow(2, (octave - REFERENCE_OCTAVE) + (pitch - REFERENCE_PITCH) / 12)
 
