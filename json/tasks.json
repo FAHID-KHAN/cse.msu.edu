@@ -1,0 +1,4 @@
+[
+    {"task": "Learn Python basics", "done": false},
+    {"task": "Practice JSON", "done": true}
+]

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahid A. Khan | Retro Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: #000;
+      color: #00ff00;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    #intro-screen {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: #000;
+      color: #00ff00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      z-index: 10000;
+      animation: intro-blink 1.5s steps(2, start) 3, fadeOut 0.5s 4.5s forwards;
+    }
+    @keyframes intro-blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+    #main-content {
+      display: none;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    body.loaded #main-content {
+      display: block;
+    }
+    header, section, footer {
+      max-width: 840px;
+      margin: 2rem auto;
+      background: #0d0d0d;
+      padding: 1.5rem;
+      border: 2px ridge #00ff00;
+      box-shadow: inset 0 0 0 2px #00ff00;
+    }
+    header {
+      text-align: center;
+      border-bottom: 4px double #00ff00;
+      text-shadow: 0 0 4px #00ff00;
+    }
+    header img {
+      width: 100px;
+      height: 100px;
+      border: 3px dashed #00ff00;
+      border-radius: 0;
+      margin-bottom: 1rem;
+      image-rendering: pixelated;
+    }
+    h1, h2, h3 {
+      color: #00ff00;
+      text-shadow: 0 0 5px #00ff00;
+    }
+    h2 {
+      border-bottom: 2px dotted #00ff00;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: square inside;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 0.7rem;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #ff00ff;
+    }
+    audio, video {
+      width: 100%;
+      margin-top: 1rem;
+      border: 2px solid #00ff00;
+      background: #000;
+    }
+    p, li {
+      font-size: 0.6rem;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      border-top: 4px double #00ff00;
+      font-size: 0.7rem;
+      text-shadow: 0 0 3px #00ff00;
+    }
+  </style>
+</head>
+<body>
+  <div id="intro-screen">[ Booting Fahid A. Khan's Resume... ]</div>
+
+  <div id="main-content">
+    <header>
+      <img src="assets/images/profile.jpg" alt="Fahid A. Khan">
+      <h1>Fahid A. Khan</h1>
+      <p>Software Engineer | Backend & DevOps</p>
+      <p>📞 +358 44 2329755 | ✉️ fahidkhan1999.alg@gmail.com</p>
+    </header>
+
+    <section id="audio-intro">
+      <h2>🎧 Audio Introduction</h2>
+      <audio controls>
+        <source src="assets/audio/intro.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="video-intro">
+      <h2>📺 Meet Me</h2>
+      <video controls>
+        <source src="assets/video/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="profile">
+      <h2>👤 Profile</h2>
+      <p>Retro-flavored software wizard coding through the matrix of bytes and terminal screens. Solving problems, automating tasks, and shipping cool stuff since the 90s spirit took over.</p>
+    </section>
+
+    <section id="skills">
+      <h2>🛠 Skills</h2>
+      <ul>
+        <li><strong>Backend & DevOps:</strong> Node.js, Express, Flask, PostgreSQL, Docker, Kubernetes</li>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React, Next.js, Bootstrap</li>
+        <li><strong>Testing:</strong> Robot Framework, Pytest, Jest</li>
+        <li><strong>Tools:</strong> Jenkins, Git, Grafana, Linux, GitHub, Figma</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>💼 Career Summary</h2>
+      <h3>Software Developer (Treon Oy)</h3>
+      <p><em>March 2021 - Present</em><br>Working on sensor integration, CI/CD pipelines, and backend APIs in a multidisciplinary IoT team.</p>
+
+      <h3>Junior Developer (Wapice Oy)</h3>
+      <p><em>Feb 2021 - Mar 2021</em><br>Developed industrial software tools and REST APIs based on client needs.</p>
+
+      <h3>Software Developer Intern (Valmet Oyj)</h3>
+      <p><em>Feb 2020 - Aug 2020</em><br>Created solutions for internal workflow optimization using Python and Jenkins.</p>
+    </section>
+
+    <section id="references">
+      <h2>📇 References</h2>
+      <ul>
+        <li>Petteri Jekunen – petteri.jekunen@tuni.fi – Senior Lecturer, TAMK</li>
+        <li>Mikko Kurkela – mikko.kurkela@devolution.fi – Project Manager, Devolution Oy</li>
+        <li>Abdullah Al Moyen – +358 45 3227895 – Senior Engineer, HappyOrNot</li>
+      </ul>
+    </section>
+
+    <section id="links">
+      <h2>🔗 Website Links</h2>
+      <p><a href="https://github.com/FAHID-KHAN" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+      <p><a href="https://www.linkedin.com/in/fahid-a-khan-4675881b9/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Fahid A. Khan. Synthwave dreams & terminal themes. 🕹️</p>
+    </footer>
+  </div>
+
+  <script>
+    window.onload = () => {
+      setTimeout(() => {
+        document.body.classList.add('loaded');
+      }, 5000);
+    };
+  </script>
+</body>
+</html>
