@@ -1,0 +1,8 @@
+app:
+  name: parser-service
+  version: 1.0
+
+database:
+  host: localhost
+  port: 5432
+  enabled: true
