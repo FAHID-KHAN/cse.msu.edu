@@ -1,0 +1,35 @@
+{
+    "address": {
+        "city": "Tampere",
+        "postal_code": 33100,
+        "street": "  "
+    },
+    "age": 26,
+    "id": 42,
+    "is_active": true,
+    "name": " Fahid Khan ",
+    "preferences": {
+        "newsletter": true,
+        "theme": "dark"
+    },
+    "projects": [
+        {
+            "completed": "false",
+            "description": "",
+            "lines_of_code": "1500",
+            "project_name": "Traffic Insight BD"
+        },
+        {
+            "completed": "true",
+            "description": null,
+            "lines_of_code": "0",
+            "project_name": ""
+        }
+    ],
+    "skills": [
+        "Python",
+        "JSON",
+        "",
+        "Docker"
+    ]
+}
